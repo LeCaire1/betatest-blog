@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LeCaire's Blog</title>
+
+<script src="https://cdn.auth0.com/js/auth0/9.15/auth0.min.js"></script>
+
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -18,16 +22,19 @@
       <p class="date">30 mars 2025</p>
       <p>Allo c'est le début du blog sur Github</p>
     </article>
+    
+    <!-- Section pour afficher le statut de la connexion -->
+    <div id="loginStatus"></div>
 
-    <article>
-      <h2>2</h2>
-      <p class="date">30 mars 2025</p>
-      <p></p>
-    </article>
+    <!-- Boutons de connexion et déconnexion -->
+    <button onclick="login()">Se connecter</button>
+    <button onclick="logout()">Se déconnecter</button>
   </main>
 
   <footer>
     <p>&copy;Fait Par LeCaire</p>
   </footer>
+
+  <script src="auth.js"></script>
 </body>
 </html>
