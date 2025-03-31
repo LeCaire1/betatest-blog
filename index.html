@@ -1,52 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LeCaire's Blog</title>
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LeCaire's Blog</title>
 <script src="https://cdn.auth0.com/js/auth0/9.15/auth0.min.js"></script>
-
-  
-  <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Bienvenue sur le blog de LeCaire </h1>
-    <p>Ce Blog est en Béta Test</p>
-  </header>
-
-  <main>
-    <article>
-      <h2>1</h2>
-      <p class="date">30 mars 2025</p>
-      <p>Allo c'est le début du blog sur Github</p>
-    </article>
-
-    <article>
-      <h2>2</h2>
-      <p class="date">30 mars 2025</p>
-      <p>Vers 3H PM je suis allé acheter un manteau avec ma mere et ma mamy</p>
-    </article>
-
+<header>
+<h1>Bienvenue sur le blog de LeCaire </h1>
+<p>Ce Blog est en Béta Test</p>
+</header>
+<main>
 <article>
-      <h2>3</h2>
-      <p class="date">30 mars 2025</p>
-      <p>jai manger des tacos pour souper </p>
-    </article>
-    
-      <!-- Section pour afficher le statut de la connexion -->
-    <div id="loginStatus"></div>
+<h2>1</h2>
+<p class="date">30 mars 2025</p>
+<p>Allo c'est le début du blog sur Github</p>
+</article>
+<article>
+<h2>2</h2>
+<p class="date">30 mars 2025</p>
+<p>Vers 3H PM je suis allé acheter un manteau avec ma mère et ma mamy</p>
+</article>
+<article>
+<h2>3</h2>
+<p class="date">30 mars 2025</p>
+<p>J'ai mangé des tacos pour souper </p>
+</article>
+<article>
+<h2>4</h2>
+<p class="date">31 mars 2025</p>
+<p>Chui allé à l'école bon math, français et édu </p>
+</article>
 
-    <!-- Boutons de connexion et déconnexion -->
-    <button onclick="login()">Se connecter</button>
-    <button onclick="logout()">Se déconnecter</button>
-  </main>
+<!-- Section pour afficher le statut de la connexion -->
+<div id="loginStatus"></div>
 
-  <footer>
-    <p>&copy;Fait Par LeCaire</p>
-  </footer>
+<!-- Boutons de connexion et déconnexion avec redirection -->
+<a href="https://dev-jijqwvivqc6v4vso.us.auth0.com/login" id="loginButton"><button>Se connecter</button></a>
+<a href="dev-jijqwvivqc6v4vso.us.auth0.com/login" id="logoutButton" style="display: none;"><button>Se déconnecter</button></a>
 
-  <script src="auth.js"></script>
+</main>
+<footer>
+<p>&copy; LeCaire 2025</p>
+</footer>
+<script src="auth.js"></script>
 </body>
 </html>
